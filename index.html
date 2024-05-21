@@ -19,35 +19,23 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Sell on Bonanza</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-
-				<a class="nav-link" href="#">Help</a>
-
-			</button>
-			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Bonanza Lending</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Help</a>
-					</li>
-				</ul>
-			</div>
-			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Login</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Rejister</a>
-					</li>
-				</ul>
-			</div>
+	<nav class="navbar navbar-expand-lg container-fluid">
+		<!-- for large section -->
+		<div class="left-section d-none d-lg-block">
+			<a href="">Sell on Bonanza</a>
+			<a href="">Bonanza Lending</a>
+			<a href="">Help</a>
+		</div>
+		<div class="right-section d-none d-lg-block">
+			<a href="">Login</a>
+			<a href="">Register</a>
+		</div>
+		<!-- for medium section -->
+		<div class="left-section d-lg-none">
+			<a href="">Sell on Bonanza</a>
+		</div>
+		<div class="right-section d-lg-none">
+			<a href="">Help</a>
 		</div>
 	</nav>
 
@@ -55,22 +43,51 @@
 		<div class="image">
 			<img src="./img/logo.png" alt="">
 		</div>
-		<!-- Search input section -->
 		<div class="input d-none d-lg-block position-relative">
 			<input type="text" placeholder="Search...">
 			<i class="fa-solid fa-magnifying-glass position-absolute top-0 end-0 translate-middle-y"></i>
 		</div>
-		<!-- Icon section -->
 		<div class="icon">
-			<!-- Original icon -->
 			<i class="fa-solid fa-cart-shopping"></i>
-			<!-- Extra icons for smaller screens -->
 			<i class="fa-solid fa-user d-lg-none"></i>
 			<i class="fa-solid fa-bell d-lg-none"></i>
 		</div>
 	</div>
-	
-	
+
+	<div class="third-navbar container-fluid">
+
+		<!-- at lg section -->
+
+		<div class="left d-none d-lg-block">
+			<a href="">Father's Day</a>
+			<a href="">Women</a>
+			<a href="">Men</a>
+			<a href="">Home</a>
+			<a href="">Beauty</a>
+			<a href="">Collectibles</a>
+			<a href="">Handbags</a>
+			<a href="">Jewelry</a>
+			<a href="">Coupons</a>
+			<a href="">More</a>
+		</div>
+		<div class="right d-none d-lg-block">
+			<i class="fa-solid fa-bars"></i>
+			<a href="">Shop By</a>
+		</div>
+
+		<!-- at md section -->
+
+		<div class="input  d-lg-none position-relative">
+			<input type="text" placeholder="Search...">
+			<i class="fa-solid fa-magnifying-glass position-absolute top-0 end-0 translate-middle-y"></i>
+		</div>
+		<div class="button d-lg-none">
+			<button>Bonanza Lenging</button>
+		</div>
+
+	</div>
+
+
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

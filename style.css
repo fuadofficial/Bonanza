@@ -5,15 +5,21 @@
 }
 
 /* header navbar */
+
 .navbar {
   background-color: #396353;
-  height: 50px;
+  height: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .navbar a {
   color: white;
   font-size: 17px;
   font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 /* sub header navbar */
@@ -50,4 +56,56 @@
   border: 0.5px solid rgb(206, 199, 199);
   padding: 10px;
   border-radius: 2px;
+}
+
+/* third navbar section */
+
+.third-navbar {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(236, 241, 236);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.third-navbar a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+/* at the large size */
+
+.third-navbar {
+  width: 100%;
+  height: 80px;
+}
+
+.third-navbar .input input {
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  border: none;
+  border: 1px solid #396353;
+  background-color: #fff;
+}
+
+.third-navbar .input i {
+  background-color: #396353;
+  padding: 16px;
+  margin-top: 25px;
+  color: #fff;
+}
+
+.third-navbar .button button {
+  color: #fff;
+  background-color: #396353;
+  padding: 10px;
+  border: none;
+}
+
+.third-navbar .button button:hover {
+  background-color: #96f39c;
+  color: black;
 }
