@@ -8,7 +8,7 @@
 
 .navbar {
   background-color: #396353;
-  height: 40px;
+  height: 50px;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -26,7 +26,7 @@
 
 .subnavbar {
   width: 100%;
-  height: 80px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,11 +51,20 @@
   color: #fff;
 }
 
+.subnavbar .input i:hover {
+  background-color: #96f39c;
+}
+
 .subnavbar .icon i {
   font-size: 15px;
   border: 0.5px solid rgb(206, 199, 199);
   padding: 10px;
   border-radius: 2px;
+}
+
+.subnavbar .icon i:hover {
+  background-color: #396353;
+  color: #fff;
 }
 
 /* third navbar section */
@@ -72,14 +81,19 @@
 .third-navbar a {
   text-decoration: none;
   color: black;
-  margin-left: 10px;
+  padding: 20px;
 }
 
-/* at the large size */
+.third-navbar a:hover {
+  background-color: #396353;
+  color: #fff;
+}
+
+/* in the large size */
 
 .third-navbar {
   width: 100%;
-  height: 80px;
+  height: 60px;
 }
 
 .third-navbar .input input {
