@@ -264,6 +264,20 @@
   color: #396353;
 }
 
+/* <!-- Shop Styles --> */
+
+.shopstyle-section{
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.shopstyle-section .right-side{
+  background-color: rgb(199, 226, 235);
+}
+.shopstyle-section img{
+  width: 300px;
+}
+
 /* Bonanza seller section  */
 
 .bonanza-seller {
