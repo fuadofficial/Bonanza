@@ -7,6 +7,7 @@
 /* header navbar */
 
 .navbar {
+  width: 100%;
   background-color: #396353;
   height: 50px;
   display: flex;
@@ -19,7 +20,7 @@
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 /* sub header navbar */
@@ -127,14 +128,13 @@
 /* slider main section */
 
 .slider-section {
+  width: 100%;
   display: flex;
-  margin-top: 40px;
+  margin: 40px;
+  height: 80vh;
 }
 
-.slider-section .left-section {
-  height: 80vh;
-  margin-right: 40px;
-}
+/* slider main section left section  */
 
 .slider1 {
   display: flex;
@@ -142,12 +142,13 @@
 }
 
 .slider1 .left-side {
-  margin-left: 30px;
-  width: 50%;
+  margin-left: 10px;
+  width: 44%;
 }
 
 .slider1 .left-side h1 {
-  margin-top: 150px;
+  margin-top: 80px;
+  color: black;
 }
 
 .slider1 .left-side p {
@@ -165,9 +166,12 @@
   width: 50%;
 }
 
-.slider-section .right-section {
-  height: 80vh;
+.slider1 .right-side img {
+  width: 200px;
+  height: 210px;
 }
+
+/* slider main section right section  */
 
 .slider-section .right-section .cart {
   display: flex;
@@ -176,21 +180,25 @@
 .slider-section .right-section .cart1 {
   background-color: rgb(224, 237, 241);
   padding: 20px;
-  height:auto;
+  width: 410px;
+  height: 190px;
+  margin-left: 0;
   margin-bottom: 20px;
 }
 
 .slider-section .right-section .cart1 h1 {
   font-size: 20px;
+  color: black;
 }
 
 .slider-section .right-section .cart2 {
   background-color: rgb(207, 235, 207);
   padding: 20px;
+  width: 410px;
 }
 
 .slider-section .right-section .cart img {
-  width: 200px;
+  width: 180px;
 }
 
 .slider-section .right-section .cart1 img {
@@ -227,14 +235,24 @@
   text-align: right;
 }
 
+/* media quiry for resposive */
+
 @media(max-width:1280px) {
   .slider-section {
     margin-top: 0px;
   }
 }
-@media(max-width:900px) {
+
+@media(max-width:991px) {
   .slider-section {
     display: flex;
     flex-direction: column;
+  }
+  .slider-section .right-section{
+    margin:20px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
