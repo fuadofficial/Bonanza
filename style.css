@@ -241,24 +241,95 @@
   width: 100%;
   margin-bottom: 100px;
 }
-.cart-section .card{
-    height: 450px;
+
+.cart-section .card {
+  height: 450px;
 }
-.cart-section .card img{
+
+.cart-section .card img {
   padding: 10px;
   border-radius: 5px;
 }
-.cart-section .card a{
+
+.cart-section .card a {
   color: black;
 }
-.cart-section .card .card-price{
+
+.cart-section .card .card-price {
   color: #396353;
   font-weight: bold;
 }
 
-.cart-section .card .card-view{
+.cart-section .card .card-view {
   color: #396353;
 }
+
+/*sub footer section */
+.sub-footer {
+  width: 100%;
+  height: 350px;
+  background-color: #06283f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.sub-footer input {
+  width: 300px;
+  height: 50px;
+  padding-left: 20px;
+  border: none;
+  color: #fff;
+}
+
+.sub-footer button {
+  height: 50px;
+  color: #396353;
+  padding: 5px;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+.sub-footer button:hover {
+  background-color: #96f39c;
+}
+
+/* footer section */
+
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+footer .image img {
+  width: 250px;
+}
+
+footer .line {
+  height: 50px;
+  width: 100%;
+  background-color: #396353;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .last-text {
+  margin-top: 10px;
+}
+
+footer .icons a i {
+  font-size: 40px;
+  color: #396353;
+  margin-left: 5px;
+}
+
+footer .icons {
+  margin: 10px 0 0 30px;
+}
+
 
 /* media quiry for resposive */
 
@@ -274,6 +345,10 @@
     flex-direction: column;
   }
 
+  .cart-section .card {
+    margin-top: 20px;
+  }
+
   .slider-section .right-section {
     margin: 20px auto;
     display: flex;
@@ -284,5 +359,31 @@
 
   .cart-section {
     margin-top: 400px;
+  }
+
+  footer .sections {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .sections {
+    text-align: center;
+  }
+
+  footer .sections h2 {
+    margin-top: 10px;
+  }
+
+  .sub-footer {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .sub-footer button {
+    margin-top: 10px;
   }
 }
